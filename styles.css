@@ -15,7 +15,13 @@
 }
 
 body {
-  background-color: var(--gris2);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(171, 44, 44, 1) 100%
+    )
+    no-repeat;
 }
 
 /* =========== NAVBAR =========== */
@@ -26,6 +32,8 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 5px 5px black;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -64,7 +72,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 2px;
 }
 
 .hero {
@@ -73,37 +81,34 @@ main {
   max-width: 1200px;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  margin-top: 50px;
 }
 
 .hero-info {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--rojovkg);
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 0 5px #212529;
+  /* background-color: rgb(61, 35, 35); */
+  padding: 20px;
 }
 
 .hero-info h1 {
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
+  color: white;
   text-align: end;
 }
 
 .hero-info h4 {
   font-family: "Oswald", sans-serif;
-  font-size: 1rem;
+  font-size: 19px;
+  color: rgb(0, 0, 0);
   text-align: end;
-  /* position: relative;
-  bottom: 10px; */
 }
 .hero-info p {
-  gap: 10px;
-  text-align: end;
+  background-color: black;
+  padding: 5px;
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  max-width: 450px;
+  color: white;
+  text-align: end;
+  font-weight: 400;
 }
 
 .css-button-fully-rounded--grey {
@@ -123,7 +128,7 @@ main {
 }
 .css-button-fully-rounded--grey:hover {
   background: #fff;
-  color: var(--rojovkg);
+  color: black;
 }
 
 /* .css-button-retro--black {
@@ -158,13 +163,18 @@ main {
   background-color: var(--gris1);
 } */
 
-.imgvkg {
+/* .imgvkg {
   width: 400px;
-  border-radius: 10px;
-  /* border: black solid 2px; */
+  padding-bottom: 20px;
+  border-radius: 20px 20px;
+  border: black solid 2px;
   box-shadow: 0px 0px 5px 1px #212529;
-}
+} */
 
 a:hover {
   color: #ebc700;
+}
+
+.imgvkg {
+  width: 400px;
 }
