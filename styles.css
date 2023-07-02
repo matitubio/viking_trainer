@@ -65,6 +65,8 @@ header {
   font-size: 2rem;
 }
 
+/* */
+
 /* =========== HERO =========== */
 main {
   display: flex;
@@ -177,4 +179,16 @@ a:hover {
 
 .imgvkg {
   width: 400px;
+}
+
+.infodesc {
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  text-align: center;
+  font-size: 20px;
+  font-family: oswald;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
