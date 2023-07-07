@@ -12,7 +12,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -347,4 +347,12 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+.menu-label {
+  display: none;
 }
