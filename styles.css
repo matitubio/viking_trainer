@@ -33,6 +33,7 @@ header {
   box-shadow: 0px 0px 5px 5px black;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .logo {
@@ -65,7 +66,7 @@ header {
 }
 
 a:hover {
-  color: #ebc700;
+  color: #efa94a;
 }
 /* */
 
@@ -75,14 +76,15 @@ a:hover {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   width: 100%;
   padding-top: 2px;
 }
 
 .hero {
   /* background-color: aqua; */
+  margin: 0 auto;
   display: flex;
   max-width: 1200px;
   justify-content: center;
@@ -92,13 +94,18 @@ main {
 
 .hero-info {
   /* background-color: rgb(61, 35, 35); */
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+  margin: 0 auto;
+  gap: 5px;
 }
 
 .hero-info h1 {
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
   color: white;
+
   text-align: end;
 }
 
@@ -111,10 +118,14 @@ main {
 .hero-info p {
   background-color: black;
   padding: 5px;
+
+  width: 480px;
   font-family: "Oswald", sans-serif;
   color: white;
   text-align: end;
   font-weight: 400;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 /* =========== Boton =========== */
@@ -133,6 +144,7 @@ main {
   border-radius: 20px;
   border: 2px solid #495057;
   background: var(--gris1);
+  z-index: 1;
 }
 .css-button-fully-rounded--grey:hover {
   background: #fff;
@@ -185,6 +197,7 @@ main {
 
 .infodesc {
   /* background-color: white; */
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   max-width: 900px;
@@ -254,4 +267,79 @@ main {
 
 .plan:hover {
   margin-top: 2px;
+}
+
+/* =========== Contacto =========== */
+
+.imgvkg2 {
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gris1);
+  height: 190px;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  gap: 10px;
+  transition: 0.5s;
+}
+
+.contact-info:hover {
+  background-color: #efa94a;
+}
+
+.title {
+  font-family: oswald;
+  font-size: 1.5rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* =========== FOOTER =========== */
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.redes li {
+  font-size: 30px;
+}
+
+.redes li:hover {
+  color: var(--gris2);
+}
+
+footer p {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
