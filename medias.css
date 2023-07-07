@@ -1,0 +1,33 @@
+@media (max-width: 992px) {
+  .navbar-list {
+    flex-direction: column;
+  }
+
+  .hero {
+    display: flex;
+
+    padding-top: 30px;
+  }
+  .hero-info h1 {
+    text-align: center;
+  }
+
+  .hero-info h4 {
+    text-align: center;
+  }
+  .hero-info p {
+    text-align: center;
+  }
+
+  .imgvkg {
+    width: 150px;
+  }
+
+  .desctxt {
+    width: 700px;
+  }
+
+  .cards-planes {
+    width: 500px;
+  }
+}
