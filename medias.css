@@ -28,10 +28,6 @@
   .desctxt {
     width: 700px;
   }
-
-  .cards-planes {
-    width: 500px;
-  }
 }
 
 /* ============Celular============== */
@@ -64,20 +60,61 @@
   #toggle-menu:checked + .navbar-list {
     display: flex;
   }
-
+  .sub-hero {
+    /* margin: 0 auto; */
+    max-width: 600px;
+  }
   .infodesc {
+    margin: 0 auto;
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .desctxt {
-    width: 200px;
+    color: white;
+    margin: 0 auto;
+    align-items: center;
     display: flex;
     justify-content: center;
   }
 
   .categories h1 {
     justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact {
+    gap: 50px;
+  }
+
+  .redes {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    padding-bottom: 10px;
+    padding-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .footer p {
+    text-align: center;
   }
 }

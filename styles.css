@@ -81,10 +81,11 @@ a:hover {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   max-width: 1200px;
   padding-top: 2px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -238,6 +239,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .cards-planes {
@@ -248,7 +250,7 @@ main {
 }
 
 .cards-planes img {
-  width: 400px;
+  width: 300px;
   cursor: pointer;
 }
 
@@ -261,7 +263,7 @@ main {
 } */
 
 .plan {
-  border: 5px solid #ccc;
+  border: 5px solid var(--gris2);
   float: left;
   margin: 10px;
   transition: margin 0.5s ease-out;
@@ -293,7 +295,7 @@ main {
   display: flex;
   flex-direction: column;
   background-color: var(--gris1);
-  height: 190px;
+  /* height: 190px; */
   padding: 10px;
   border-radius: 30px;
   text-align: center;
@@ -338,7 +340,7 @@ main {
 }
 
 .redes li:hover {
-  color: var(--gris2);
+  color: #00acee;
 }
 
 footer p {
